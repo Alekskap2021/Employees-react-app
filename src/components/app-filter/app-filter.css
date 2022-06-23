@@ -1,0 +1,15 @@
+.btn-group {
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 12px;
+    min-width: 120px;
+  }
+}
