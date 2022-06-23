@@ -40,7 +40,7 @@ class EmployeesListItem extends Component {
 
     return (
       <li className={classNames}>
-        <span className="list-group-item-label col-6" onClick={onTogglePromotion}>
+        <span className="list-group-item-label col-md-1 col-6" onClick={onTogglePromotion}>
           {name}
         </span>
         <div className="empControl col-6 d-flex justify-content-end">
