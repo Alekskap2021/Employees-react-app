@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Employees-react-app/static/css/main.b8d39426.css",
-    "main.js": "/Employees-react-app/static/js/main.9e6afb94.js",
+    "main.js": "/Employees-react-app/static/js/main.975abe67.js",
     "index.html": "/Employees-react-app/index.html",
     "main.b8d39426.css.map": "/Employees-react-app/static/css/main.b8d39426.css.map",
-    "main.9e6afb94.js.map": "/Employees-react-app/static/js/main.9e6afb94.js.map"
+    "main.975abe67.js.map": "/Employees-react-app/static/js/main.975abe67.js.map"
   },
   "entrypoints": [
     "static/css/main.b8d39426.css",
-    "static/js/main.9e6afb94.js"
+    "static/js/main.975abe67.js"
   ]
 }
