@@ -13,9 +13,9 @@ class App extends Component {
     super(props);
     this.state = {
       data: [
-        { name: "John S.", salary: 800, increase: false, promotion: false, id: 1 },
+        { name: "John S.", salary: 800, increase: false, promotion: true, id: 1 },
         { name: "Alex M.", salary: 2500, increase: false, promotion: false, id: 2 },
-        { name: "Carl W.", salary: 15000, increase: false, promotion: false, id: 3 },
+        { name: "Carl W.", salary: 15000, increase: true, promotion: false, id: 3 },
       ],
       term: "",
       filter: "all",
