@@ -13,9 +13,9 @@ class App extends Component {
     super(props);
     this.state = {
       data: [
-        { name: "John S.", salary: `800`, increase: false, promotion: false, id: 1 },
-        { name: "Alex M.", salary: `2500`, increase: false, promotion: false, id: 2 },
-        { name: "Carl W.", salary: `15000`, increase: false, promotion: false, id: 3 },
+        { name: "John S.", salary: 800, increase: false, promotion: false, id: 1 },
+        { name: "Alex M.", salary: 2500, increase: false, promotion: false, id: 2 },
+        { name: "Carl W.", salary: 15000, increase: false, promotion: false, id: 3 },
       ],
       term: "",
       filter: "all",
@@ -79,7 +79,12 @@ class App extends Component {
       case "onPromotion":
         return items.filter((item) => item.promotion);
       case "moreThen1000":
-        return items.filter((item) => item.salary > 1000);
+        return items.filter((item) => {
+          if (isNaN(item.salary)) {
+            item.salary = +item.salary.slice(0, item.salary.length - 1);
+          }
+          return item.salary > 1000;
+        });
       case "onIncrease":
         return items.filter((item) => item.increase);
       default:

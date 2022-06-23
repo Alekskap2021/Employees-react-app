@@ -21,7 +21,7 @@ class EmployeesListItem extends Component {
     }
   };
   set$ = (salary) => {
-    if (salary.indexOf(`$`) === -1) {
+    if (salary.toString().indexOf(`$`) === -1) {
       return salary + `$`;
     }
     return salary;
